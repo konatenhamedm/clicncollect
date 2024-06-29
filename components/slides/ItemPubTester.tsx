@@ -37,9 +37,9 @@ const ItemPubTester: React.FC<ItemProps> = ({
           alt=""
           quality={100}
           layout="responsive"
-          objectFit="cover"
+          objectFit="contain"
           priority
-          className="z-0 w-full  h-full object-cover"
+          className="z-0 w-full  h-full object-contain"
         />
       </div>
       <div className="z-20 relative text-white container ">

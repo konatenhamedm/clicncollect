@@ -33,28 +33,28 @@ function Header() {
   }, []);
 
   return (
-    <header className="flex w-full bg-white font-sans-serif min-h-80px tracking-wide left-0 right-0 z-40 fixed top-0">
+    <header className="flex w-full bg-white font-[sans-serif] min-h-[80px] tracking-wide left-0 right-0 z-40 fixed top-0">
       <div className="container mx-auto sm:px-8 px-6 border-b-2 border-b-blue py-4 top-0 border-t-2 border-r-2 border-l-2 border-t-gray-200 border-r-gray-200 border-l-gray-200">
-        <div className="flex items-center justify-between lg:gap-y-2 gap-4 w-full">
-          <a href="#" className="flex items-center">
+        <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+          <a href="#" className="mr-4">
             <Image
               src="/logo2 (1).jpg"
               alt="logo"
-              width={80} // Réduire la largeur du logo
-              height={80} // Réduire la hauteur du logo
-              className="w-20 h-20 md:w-40 md:h-40" // Adapter la classe pour différentes tailles d'écran
+              width={200}
+              height={200}
+              className="w-[6rem] md:w-[16rem]"
             />
           </a>
 
           <div
             id="collapseMenu"
             ref={collapseMenuRef}
-            className="lg:ml-10 max-lg:hidden lg:block fixed inset-0 bg-black opacity-50 z-50"
+            className="lg:ml-10 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
           >
             <button
               id="toggleClose"
               ref={toggleCloseRef}
-              className="lg:hidden fixed top-2 right-4 z-100 rounded-full bg-white p-3"
+              className="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ function Header() {
                 <path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"></path>
               </svg>
             </button>
-            <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-300px max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"></ul>
+            <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"></ul>
           </div>
 
           <div className="flex gap-x-6 gap-y-4 ml-auto justify-end">
@@ -85,7 +85,7 @@ function Header() {
               </svg>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="flex flex-col items-center text-black text-sm">
+              <span className="flex flex-col items-center text-black text-[12px] ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ function Header() {
               </span>
               <a
                 href="#"
-                className="flex flex-col items-center text-black text-sm"
+                className="flex flex-col items-center text-black text-[12px] "
               >
                 <Image
                   src="/connexion.png"
