@@ -18,7 +18,7 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
     <>
       <div
         onClick={handleClick}
-        className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative"
+        className="bg-white rounded-xl border-2 border-black p-5 cursor-pointer hover:-translate-y-2 transition-all relative"
       >
         <div
           onClick={handleClick}

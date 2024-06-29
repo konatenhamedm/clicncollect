@@ -56,7 +56,7 @@ export default function Home() {
       <Tester />
 
       <div className="flex items-center   bg-white rounded border-2 border-[#EC9108]">
-        <div className="flex flex-shrink-0 items-center justify-center bg-white h-10 md:h-14 w-16 rounded">
+        <div className="flex flex-shrink-0 items-center justify-center bg-white h-10 md:h-12 w-16 rounded">
           {/* <svg
             className="w-6 h-6 fill-current text-green-700"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,22 +71,22 @@ export default function Home() {
           </svg> */}
 
           <img
-            src="/logo.jpg"
+            src="/WhatsApp Image 2024-06-29 à 12.01.09_a6f8fc8c.jpg"
             alt="Picture of the author"
-            width={50}
+            width={40}
             height={50}
           />
         </div>
-        <div className="flex-grow flex flex-col ml-4">
+        <div className="flex-grow flex flex-col ml-0">
           {/*  <span className="text-xl font-bold">$8,430</span> */}
           <div className="flex items-center justify-between">
-            <span className="text-black text-[11px] md:text-3xl hidden sm:block">
-              Achetez sur le site de vos marques en France et faites vous à
-              Abidjan
+            <span className="text-black text-[11px] md:text-2xl hidden sm:block">
+              Achetez sur le site de vos marques en France et faites vous livrer
+              à Abidjan
             </span>
             <span className="text-black text-[11px] md:text-2xl md:hidden ">
-              Achetez sur le site de vos marques en France. {""} Faites vous
-              livrer à Abidjan par Clicncollect.
+              Achetez sur le site de vos marques en France {""} Faites vous
+              livrer à Abidjan par Clicncollect
             </span>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
