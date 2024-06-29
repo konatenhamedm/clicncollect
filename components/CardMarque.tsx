@@ -22,7 +22,7 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
       >
         <div
           onClick={handleClick}
-          className="bg-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4"
+          className=" w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-0 bg-transparent right-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

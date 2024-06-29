@@ -11,8 +11,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "ONCECI",
-  description: "Plateform de demande documents administratifs",
+  title: "CLICNCOLLECT",
+  description: "Site ecommerce pour tous",
 };
 
 export default function RootLayout({
