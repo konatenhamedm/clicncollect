@@ -55,8 +55,8 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-white">
       <Tester />
 
-      <div className="flex items-center   bg-[#F5F5F5] rounded border-4 border-[#EC9108]">
-        <div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
+      <div className="flex items-center   bg-white rounded border-4 border-[#EC9108]">
+        <div className="flex flex-shrink-0 items-center justify-center bg-white h-14 w-16 rounded">
           {/* <svg
             className="w-6 h-6 fill-current text-green-700"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function Home() {
           </svg> */}
 
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxX2VuzScK-qbyxuFlV_XlhI18bAwS7XQf6TxND4hbdTkhf9h7ZwujSUxiLLtHnU61y6k&usqp=CAU"
+            src="/images.jpeg"
             alt="Picture of the author"
             width={50}
             height={50}
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="flex-grow flex flex-col ml-4">
           {/*  <span className="text-xl font-bold">$8,430</span> */}
           <div className="flex items-center justify-between">
-            <span className="text-black text-3xl">
+            <span className="text-black text-sm md:text-2xl">
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan
             </span>

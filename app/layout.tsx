@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <Header />
-        <div className="container  mx-auto bg-[#fbfff8]  w-[80%]  border-4 ">
-          <div className="text-neutral-800  relative overflow-hidden flex flex-col justify-around w-full   bg-[#fbfff8]  px-4">
+        <div className="container  mx-auto bg-white    border-2 border-gray-200 ">
+          <div className="text-neutral-800  relative overflow-hidden flex flex-col justify-around w-full   bg-white  px-4">
             {children}
           </div>
 

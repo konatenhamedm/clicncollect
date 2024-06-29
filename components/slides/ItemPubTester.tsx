@@ -31,7 +31,7 @@ const ItemPubTester: React.FC<ItemProps> = ({
       </div>
       <div className="absolute  h-auto z-10 w-full">
         <Image
-          height={455}
+          height={350}
           width={100}
           src={image}
           alt=""

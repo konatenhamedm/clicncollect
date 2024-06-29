@@ -34,8 +34,8 @@ function Header() {
 
   return (
     <>
-      <header className="flex w-full bg-[#FBFFF8]   font-[sans-serif] min-h-[80px] tracking-wide left-0 right-0 z-40 fixed top-0">
-        <div className="container mx-auto sm:px-8 px-6 border-b py-4 top-0 border-t-4 border-r-4 border-l-4">
+      <header className="flex w-full bg-white  font-[sans-serif] min-h-[80px] tracking-wide left-0 right-0 z-40 fixed top-0">
+        <div className="container mx-auto sm:px-8 px-6 border-b-2 border-b-blue py-4 top-0 border-t-2 border-r-2 border-l-2  border-t-gray-200 border-r-gray-200 border-l-gray-200">
           <div className="flex flex-wrap items-center  lg:gap-y-2 gap-4 w-full">
             <a href="#">
               <Image
@@ -43,7 +43,7 @@ function Header() {
                 alt="logo"
                 width={200}
                 height={200}
-                className="w-[6rem]"
+                className="w-[6rem] md:w-[16rem]"
               />
             </a>
 
@@ -122,7 +122,7 @@ function Header() {
               <div className="flex border-2 focus-within:border-gray-400 rounded-full px-6 py-3 overflow-hidden max-w-52 max-lg:hidden">
                 <input
                   type="text"
-                  placeholder="Recherche quelque chose..."
+                  placeholder="Recherche..."
                   className="w-full text-sm bg-transparent outline-none pr-2"
                 />
                 <svg
@@ -136,7 +136,7 @@ function Header() {
               </div>
 
               <div className="flex items-center space-x-8">
-                <span className="relative">
+                {/* <span className="relative">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -149,8 +149,8 @@ function Header() {
                     0
                   </span>
                 </span>
-
-                <span className="relative">
+ */}
+                {/* <span className="relative">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -163,7 +163,7 @@ function Header() {
                   <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
                     0
                   </span>
-                </span>
+                </span> */}
                 <span className="relative">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,16 +176,14 @@ function Header() {
                   >
                     <path d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" />
                   </svg>
-                  <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
-                    0
-                  </span>
+                  <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"></span>
                 </span>
 
-                <button className="px-5 py-2 text-sm rounded-lg text-white bg-gradient-to-r from-[#75d4c3] to-[#f1a730] hover:bg-[#f1a730] hover:to-[#95ebdb]">
+                <button className="px-5 py-2 text-sm rounded-lg text-white bg-[#f1a730] ">
                   Se connecter
                 </button>
 
-                <button
+                {/* <button
                   id="toggleOpen"
                   ref={toggleOpenRef}
                   className="lg:hidden"
@@ -202,7 +200,7 @@ function Header() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

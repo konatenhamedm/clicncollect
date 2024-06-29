@@ -18,41 +18,19 @@ const dataR = [
     id: 1,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl:
-      "https://marketingreport.one/Article%20Images/Key%20Industy%20Images/e_commerce_Marketing_Report.jpg",
+    imageUrl: "/PUBLICITAIRE (1).png",
   },
   {
     id: 2,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl: "https://www.export.org.uk/media/cvb9zpgu/ECommerce.jpg",
-  },
-  {
-    id: 3,
-    title: "Swiper Carousel Example",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl: "https://neilpatel.com/wp-content/uploads/2015/04/ecommerce.jpg",
+    imageUrl: "/PUBLICITAIRE (2).png",
   },
   {
     id: 4,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl:
-      "https://www.etowline.fr/wp-content/uploads/creer-un-site-ecommerce-gratuit.webp",
-  },
-  {
-    id: 5,
-    title: "Swiper Carousel Example",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl:
-      "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2021/07/28120036/Boost-Your-eCommerce-Business.jpg",
-  },
-  {
-    id: 6,
-    title: "Swiper Carousel Example",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
-    imageUrl:
-      "https://www.araoo.fr/media/images/beautiful-silhouette-image-1024x5.width-800.format-webp.webp",
+    imageUrl: "/PUBLICITAIRE.png",
   },
 ];
 
