@@ -18,6 +18,12 @@ const dataR = [
     id: 1,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
+    imageUrl: "/banniere.jpg",
+  },
+  {
+    id: 1,
+    title: "Swiper Carousel Example",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
     imageUrl: "/PUBLICITAIRE (1).png",
   },
   {

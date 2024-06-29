@@ -80,7 +80,7 @@ export default function Home() {
         <div className="flex-grow flex flex-col ml-4">
           {/*  <span className="text-xl font-bold">$8,430</span> */}
           <div className="flex items-center justify-between">
-            <span className="text-black text-sm md:text-2xl">
+            <span className="text-black text-[6px] md:text-2xl">
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan
             </span>
