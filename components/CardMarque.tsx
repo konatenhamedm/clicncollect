@@ -18,7 +18,7 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
     <>
       <div
         onClick={handleClick}
-        className="bg-white rounded-xl border border-gray-700 p-5 cursor-pointer hover:-translate-y-2 transition-all relative"
+        className="bg-white rounded-xl border border-gray-300 p-5 cursor-pointer hover:-translate-y-2 transition-all relative"
       >
         <div
           onClick={handleClick}
@@ -37,7 +37,7 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
           </svg>
         </div>
 
-        <div className="w-6/6 h-[110px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+        <div className="w-6/6 h-[50px] md:h-[110px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
           <Image
             width={200}
             height={200}
