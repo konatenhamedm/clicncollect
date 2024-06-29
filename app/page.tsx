@@ -55,7 +55,7 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-white">
       <Tester />
 
-      <div className="flex items-center   bg-white rounded border-2 border-[#EC9108]">
+      <div className="flex items-center   bg-white rounded border border-[#EC9108]">
         <div className="flex flex-shrink-0 items-center justify-center bg-white h-10 md:h-12 w-16 rounded">
           {/* <svg
             className="w-6 h-6 fill-current text-green-700"
@@ -84,7 +84,7 @@ export default function Home() {
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan
             </span>
-            <span className="text-black text-[11px] md:text-2xl md:hidden ">
+            <span className="text-black text-[11px] md:text-2xl md:hidden sm:hidden ">
               Achetez sur le site de vos marques en France {""} Faites vous
               livrer à Abidjan par Clicncollect
             </span>
