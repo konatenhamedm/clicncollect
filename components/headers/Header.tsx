@@ -38,7 +38,7 @@ function Header() {
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
           <a href="#" className="mr-4">
             <Image
-              src="/WhatsApp Image 2024-06-29 à 15.05.11_5292f42c.jpg"
+              src="/logo_reel.jpg"
               alt="logo"
               width={200}
               height={200}
