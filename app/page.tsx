@@ -55,7 +55,7 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-[#F5F5F5]">
       <Tester />
 
-      <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108]">
+      <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108] mt-[-40px] md:mt-[0px]">
         <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
           <img
             src="/WhatsApp_Image_2024-06-29_à_12.01.09_a6f8fc8c-removebg-preview.png"
@@ -66,14 +66,10 @@ export default function Home() {
         </div>
         <div className="flex-grow flex flex-col ml-0">
           <div className="flex items-center justify-between">
-            <p>
-              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-                Achetez sur le site de vos marques en France et{" "}
-              </span>
-              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-[#75d4c3] from-[#f1a730] mt-[-2rem]">
-                faites vous livrer à Abidjan par ClicnCollect
-              </span>
-            </p>
+            <span className="text-gray-500 font-bold text-[11px] md:text-2xl ">
+              Achetez sur le site de vos marques en France et faites vous livrer
+              à Abidjan par ClicnCollect
+            </span>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
         </div>

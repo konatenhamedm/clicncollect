@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/headers/Header";
 import Footer from "@/components/footers/Footer";
 //const roboto = Roboto({ weight: "400", subsets: ["latin"] });
-const roboto = Roboto({
+const roboto = Poppins({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
