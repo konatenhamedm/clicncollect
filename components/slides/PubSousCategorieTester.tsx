@@ -8,19 +8,19 @@ const dataR = [
     id: 1,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/banniere.jpg",
+    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_de3b710e.jpg",
   },
   {
     id: 2,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/PUBLICITAIRE (1).png",
+    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_8ce96621.jpg",
   },
   {
     id: 3,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/PUBLICITAIRE (2).png",
+    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_cffbebc6.jpg",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const PubSousCategorieTester: React.FC<PubSousCategorieProps> = ({ ordre }) => {
   };
 
   return (
-    <div className="my-0 inset-0" style={{ height: "25vh" }}>
+    <div className="my-0 inset-0" style={{ height: "30vh" }}>
       <div id="custom-controls-gallery" className="relative w-full h-full">
         <div className="relative w-full h-full overflow-hidden rounded-lg">
           <link

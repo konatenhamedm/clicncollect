@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@nextui-org/react";
 import React from "react";
 import Image from "next/image";
@@ -20,46 +18,25 @@ const ItemPubTester: React.FC<ItemProps> = ({
   lien,
 }) => {
   return (
-    <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer ">
-      <div className="z-20 relative text-white container ">
-        {/*  <p className="leading-normal mb-1 mt-5"></p>
+    <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
+      <div className="z-20 relative text-white container">
+        <p className="leading-normal mb-1 mt-5">{desc}</p>
         <Button color="primary" variant="ghost">
-          <a href={lien ? lien : "#"} className="text-white " target="_blank">
+          <a href={lien ? lien : "#"} className="text-white" target="_blank">
             {bouton ? bouton : "Visiter le lien"}
           </a>
-        </Button> */}
+        </Button>
       </div>
-      <div className="absolute  h-auto z-10 w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0">
         <Image
-          height={450}
-          width={100}
           src={image}
           alt=""
+          layout="fill"
+          objectFit="cover"
           quality={100}
-          layout="responsive"
-          objectFit="contain"
           priority
-          className="z-0 w-full  h-full object-contain"
+          className="z-0"
         />
-      </div>
-      <div className="z-20 relative text-white container ">
-        <p className="leading-normal mb-1 mt-[10rem]"></p>
-        {/*  <Button
-          className="text-tiny w-[143px]"
-          color="primary"
-          radius="full"
-          size="sm"
-        >
-          <a href={lien ? lien : "#"} className="text-white " target="_blank">
-            {bouton ? bouton : "Visiter le lien"}
-          </a>
-        </Button> */}
-
-        {/* <Button color="primary" variant="ghost">
-          <a href={lien ? lien : "#"} className="text-white " target="_blank">
-            {bouton ? bouton : "Visiter le lien"}
-          </a>
-        </Button> */}
       </div>
     </div>
   );

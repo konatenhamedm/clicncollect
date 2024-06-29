@@ -66,14 +66,14 @@ export default function Home() {
         </div>
         <div className="flex-grow flex flex-col ml-0">
           <div className="flex items-center justify-between">
-            <h6>
+            <p>
               <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
                 Achetez sur le site de vos marques en France et{" "}
               </span>
-              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-[#75d4c3] from-[#f1a730]">
+              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-[#75d4c3] from-[#f1a730] mt-[-2rem]">
                 faites vous livrer à Abidjan par ClicnCollect
               </span>
-            </h6>
+            </p>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
         </div>
