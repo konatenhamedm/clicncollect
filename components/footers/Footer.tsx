@@ -179,7 +179,7 @@ function Footer() {
               target="_blank"
               className="hover:underline mx-1"
             >
-              clicnCollect
+              clicknCollect
             </a>
             Tous droits réservés.
           </p>
