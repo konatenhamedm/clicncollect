@@ -18,11 +18,11 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
     <>
       <div
         onClick={handleClick}
-        className="bg-white rounded-xl border-2 border-black p-5 cursor-pointer hover:-translate-y-2 transition-all relative "
+        className="bg-white rounded-xl border border-gray-700 p-5 cursor-pointer hover:-translate-y-2 transition-all relative"
       >
         <div
           onClick={handleClick}
-          className=" w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-0 bg-transparent right-2"
+          className="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-0 bg-transparent right-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,6 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
             width={200}
             height={200}
             src={"/" + nom + ".jpg"}
-            //src="https://readymadeui.com/images/product9.webp"
             alt="Product 1"
             className="h-full w-full object-contain"
           />
@@ -50,12 +49,12 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
 
         <div>
           <h3 className="text-lg font-extrabold text-gray-800">
-            {/*  Sole Elegance */}
+            {/* Sole Elegance */}
           </h3>
           {/* <p className="text-gray-600 text-sm mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <h4 className="text-lg text-gray-800 font-bold mt-4">$10</h4> */}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <h4 className="text-lg text-gray-800 font-bold mt-4">$10</h4> */}
         </div>
       </div>
     </>
