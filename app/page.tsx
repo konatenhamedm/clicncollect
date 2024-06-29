@@ -80,9 +80,13 @@ export default function Home() {
         <div className="flex-grow flex flex-col ml-4">
           {/*  <span className="text-xl font-bold">$8,430</span> */}
           <div className="flex items-center justify-between">
-            <span className="text-black text-[6px] md:text-2xl">
-              Achetez sur le site de vos marques en France et faites vous livrer
-              à Abidjan
+            <span className="text-black text-[11px] md:text-3xl hidden sm:block">
+              Achetez sur le site de vos marques en France et faites vous à
+              Abidjan
+            </span>
+            <span className="text-black text-[11px] md:text-2xl md:hidden ">
+              Achetez sur le site de vos marques en France. {""} Faites vous à
+              Abidjan Clicncollect livrer
             </span>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
