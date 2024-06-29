@@ -5,7 +5,7 @@ import CardMarque from "./CardMarque";
 function Marque() {
   return (
     <>
-      <div className="font-[sans-serif] bg-white">
+      <div className="font-[sans-serif] bg-[#F5F5F5]">
         <div className="py-4 px-2 mx-auto w-full">
           {/*  <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
             Premium Sneakers

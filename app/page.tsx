@@ -52,11 +52,11 @@ export default function Home() {
     }, */
   };
   return (
-    <div className=" py-7 mt-[45px] bg-white">
+    <div className=" py-7 mt-[45px] bg-[#F5F5F5]">
       <Tester />
 
-      <div className="flex items-center   bg-white rounded border border-[#EC9108]">
-        <div className="flex flex-shrink-0 items-center justify-center bg-white h-10 md:h-12 w-16 rounded">
+      <div className="flex items-center   bg-[#F5F5F5] rounded border border-[#EC9108]">
+        <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
           {/* <svg
             className="w-6 h-6 fill-current text-green-700"
             xmlns="http://www.w3.org/2000/svg"
@@ -77,17 +77,17 @@ export default function Home() {
             height={50}
           />
         </div>
-        <div className="flex-grow flex flex-col ml-0">
+        <div className="flex-grow flex flex-col ml-0 ">
           {/*  <span className="text-xl font-bold">$8,430</span> */}
           <div className="flex items-center justify-between">
-            <span className="text-black text-[11px] md:text-2xl hidden sm:block">
-              Achetez sur le site de vos marques en France et faites vous livrer
-              à Abidjan
+            <span className="text-black text-[11px] md:text-2xl ">
+              Achetez sur le site de vos marques en France, faites vous livrer à
+              Abidjan par ClicnCollect
             </span>
-            <span className="text-black text-[11px] md:text-2xl md:hidden sm:hidden ">
+            {/* <span className="text-black text-[11px] md:text-2xl md:hidden sm:hidden ">
               Achetez sur le site de vos marques en France {""} Faites vous
               livrer à Abidjan par Clicncollect
-            </span>
+            </span> */}
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
         </div>
