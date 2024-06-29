@@ -85,8 +85,8 @@ export default function Home() {
               Abidjan
             </span>
             <span className="text-black text-[11px] md:text-2xl md:hidden ">
-              Achetez sur le site de vos marques en France. {""} Faites vous à
-              Abidjan Clicncollect livrer
+              Achetez sur le site de vos marques en France. {""} Faites vous
+              livrer à Abidjan par Clicncollect.
             </span>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
