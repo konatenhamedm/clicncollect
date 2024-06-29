@@ -181,14 +181,14 @@ function Header() {
 
                 {/* <button className="px-5 py-2 text-sm rounded-lg text-white bg-[#f1a730] ">
                  */}
-                <div className="items-center">
+                <div className="items-center text-black text-[10px]">
                   <a href="#">
                     <Image
                       src="/connexion.png"
                       alt="logo"
                       width={20}
                       height={20}
-                      className="w-[25px] md:w-[2rem] ml-8"
+                      className="w-[25px] md:w-[2rem] ml-4 "
                     />
                     Se connecter
                   </a>
