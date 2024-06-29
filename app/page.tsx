@@ -55,43 +55,30 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-[#F5F5F5]">
       <Tester />
 
-      <div className="flex items-center   bg-[#F5F5F5] rounded border border-[#EC9108]">
+      <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108]">
         <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
-          {/* <svg
-            className="w-6 h-6 fill-current text-green-700"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg> */}
-
           <img
-            src="/WhatsApp Image 2024-06-29 à 12.01.09_a6f8fc8c.jpg"
+            src="/WhatsApp_Image_2024-06-29_à_12.01.09_a6f8fc8c-removebg-preview.png"
             alt="Picture of the author"
             width={40}
             height={50}
           />
         </div>
-        <div className="flex-grow flex flex-col ml-0 ">
-          {/*  <span className="text-xl font-bold">$8,430</span> */}
+        <div className="flex-grow flex flex-col ml-0">
           <div className="flex items-center justify-between">
-            <span className="text-black text-[11px] md:text-2xl ">
-              Achetez sur le site de vos marques en France, faites vous livrer à
-              Abidjan par ClicnCollect
-            </span>
-            {/* <span className="text-black text-[11px] md:text-2xl md:hidden sm:hidden ">
-              Achetez sur le site de vos marques en France {""} Faites vous
-              livrer à Abidjan par Clicncollect
-            </span> */}
+            <h6>
+              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+                Achetez sur le site de vos marques en France et{" "}
+              </span>
+              <span className="text-transparent text-[11px] md:text-2xl bg-clip-text bg-gradient-to-r to-[#75d4c3] from-[#f1a730]">
+                faites vous livrer à Abidjan par ClicnCollect
+              </span>
+            </h6>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
         </div>
       </div>
+
       <Marque />
     </div>
   );
