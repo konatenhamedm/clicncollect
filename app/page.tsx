@@ -55,8 +55,8 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-white">
       <Tester />
 
-      <div className="flex items-center   bg-white rounded border-4 border-[#EC9108]">
-        <div className="flex flex-shrink-0 items-center justify-center bg-white h-14 w-16 rounded">
+      <div className="flex items-center   bg-white rounded border-2 border-[#EC9108]">
+        <div className="flex flex-shrink-0 items-center justify-center bg-white h-10 md:h-14 w-16 rounded">
           {/* <svg
             className="w-6 h-6 fill-current text-green-700"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function Home() {
           </svg> */}
 
           <img
-            src="/images.jpeg"
+            src="/logo.jpg"
             alt="Picture of the author"
             width={50}
             height={50}

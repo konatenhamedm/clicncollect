@@ -179,9 +179,21 @@ function Header() {
                   <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"></span>
                 </span>
 
-                <button className="px-5 py-2 text-sm rounded-lg text-white bg-[#f1a730] ">
-                  Se connecter
-                </button>
+                {/* <button className="px-5 py-2 text-sm rounded-lg text-white bg-[#f1a730] ">
+                 */}
+                <div className="items-center">
+                  <a href="#">
+                    <Image
+                      src="/connexion.png"
+                      alt="logo"
+                      width={20}
+                      height={20}
+                      className="w-[25px] md:w-[2rem] ml-8"
+                    />
+                    Se connecter
+                  </a>
+                </div>
+                {/* </button> */}
 
                 {/* <button
                   id="toggleOpen"
