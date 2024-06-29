@@ -37,7 +37,7 @@ const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
           </svg>
         </div>
 
-        <div className="w-6/6 h-[50px] md:h-[110px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+        <div className="w-6/6 h-[40px] md:h-[110px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-2">
           <Image
             width={200}
             height={200}
