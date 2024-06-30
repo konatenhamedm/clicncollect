@@ -60,13 +60,12 @@ export default function Home() {
           <img
             src="/WhatsApp_Image_2024-06-29_à_12.01.09_a6f8fc8c-removebg-preview.png"
             alt="Picture of the author"
-            width={40}
-            height={50}
+            className="w-full h-full object-contain"
           />
         </div>
         <div className="flex-grow flex flex-col ml-0">
           <div className="flex items-center justify-between">
-            <span className="text-black font-extrabold text-[9px] md:text-2xl ">
+            <span className="text-black font-extrabold text-[9px] md:text-2xl">
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan par ClicnCollect
             </span>

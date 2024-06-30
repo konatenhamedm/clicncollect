@@ -12,7 +12,8 @@ interface CardMarqueProps {
 const CardMarque: React.FC<CardMarqueProps> = ({ nom, image, lien }) => {
   const router = useRouter();
   const handleClick = () => {
-    window.open(lien, "_blank");
+    //window.open(lien, "_blank");
+    router.push("/information/" + nom);
   };
   return (
     <>
