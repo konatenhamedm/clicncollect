@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div className="flex-grow flex flex-col ml-0">
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 font-bold text-[11px] md:text-2xl ">
+            <span className="text-black font-extrabold text-[9px] md:text-2xl ">
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan par ClicnCollect
             </span>

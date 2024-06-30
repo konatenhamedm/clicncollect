@@ -38,7 +38,7 @@ function Header() {
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
           <a href="#" className="mr-4">
             <Image
-              src="/logo_reel.jpg"
+              src="/logo2.jpg"
               alt="logo"
               width={200}
               height={200}

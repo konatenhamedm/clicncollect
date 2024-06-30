@@ -8,25 +8,25 @@ const dataR = [
     id: 1,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_de3b710e.jpg",
+    imageUrl: "/banniere4.jpg",
   },
   {
     id: 2,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_8ce96621.jpg",
+    imageUrl: "/banniere3.jpg",
   },
   {
     id: 3,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/WhatsApp Image 2024-06-29 à 14.58.03_cffbebc6.jpg",
+    imageUrl: "/banniere2(1)(1).jpg",
   },
   {
     id: 4,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/PUBLICITAIRE.png",
+    imageUrl: "/banniere1.jpg",
   },
 ];
 
