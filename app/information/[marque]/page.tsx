@@ -8,7 +8,7 @@ function Page({ params }: { params: { marque: string } }) {
     <div className=" flex pb-4 py-7 mt-[45px] bg-[#F5F5F5] items-center justify-center">
       <div
         className="pt-4  items-center justify-center pb-4"
-        style={{ height: "54vh" }}
+        //style={{ height: "54vh" }}
       >
         <div className="bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg pb-4 items-center justify-center mt-[100px]">
           <div className="px-4 py-5 sm:px-6 items-center justify-center">
