@@ -9,7 +9,7 @@ interface InputProps {
   longeur: number;
   message?: string;
 }
-const FormInput = ({
+const FormArea = ({
   formik,
   type,
   name,
@@ -34,9 +34,9 @@ const FormInput = ({
       </label>
       <p></p> */}
 
-      <input
+      <textarea
         className="bg-white flex w-full text-black text-sm border-2 border-black   placeholder-custom-placeholder placeholder-black  rounded-sm p-2 mb-4 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
-        type={type}
+        rows={3}
         name={name}
         placeholder={placeholder}
         onChange={formik.handleChange}
@@ -61,4 +61,4 @@ const FormInput = ({
   );
 };
 
-export default FormInput;
+export default FormArea;

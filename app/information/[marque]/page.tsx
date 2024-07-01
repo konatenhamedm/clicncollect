@@ -5,7 +5,7 @@ import React from "react";
 function Page({ params }: { params: { marque: string } }) {
   const router = useRouter();
   return (
-    <div className=" flex pb-4 py-7 mt-[45px] bg-[#F5F5F5] items-center justify-center">
+    <div className=" flex pb-4 py-7  bg-[#F5F5F5] items-center justify-center">
       <div
         className="pt-4  items-center justify-center pb-4"
         //style={{ height: "54vh" }}
