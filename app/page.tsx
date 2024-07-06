@@ -56,16 +56,16 @@ export default function Home() {
       <Tester />
 
       <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108] mt-[-40px] md:mt-[0px]">
-        <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
+        {/*  <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
           <img
             src="/WhatsApp_Image_2024-06-29_à_12.01.09_a6f8fc8c-removebg-preview.png"
             alt="Picture of the author"
             className="w-full h-full object-contain"
           />
-        </div>
-        <div className="flex-grow flex flex-col ml-0">
+        </div> */}
+        <div className="flex-grow flex flex-col ml-4 p-2">
           <div className="flex items-center justify-between">
-            <span className="text-black font-extrabold text-[9px] md:text-2xl">
+            <span className="text-black font-normal text-[9px] md:text-xl">
               Achetez sur le site de vos marques en France et faites vous livrer
               à Abidjan par ClicnCollect
             </span>

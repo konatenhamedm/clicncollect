@@ -36,13 +36,13 @@ function Header() {
     <header className="flex w-full bg-white font-[sans-serif] min-h-[80px] tracking-wide left-0 right-0 z-40 fixed top-0">
       <div className="container mx-auto sm:px-8 px-6 border-b-2 border-b-blue py-4 top-0 border-t-2 border-r-2 border-l-2 border-t-gray-200 border-r-gray-200 border-l-gray-200">
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
-          <a href="#" className="mr-4">
+          <a href="/" className="mr-4">
             <Image
               src="/logo2.jpg"
               alt="logo"
               width={200}
               height={200}
-              className="w-[7rem] md:w-[16rem]"
+              className="w-[6rem] md:w-[16rem]"
             />
           </a>
 

@@ -4,30 +4,30 @@ import Slider from "react-slick";
 import ItemPubTester from "./ItemPubTester";
 
 const dataR = [
-  {
+  /*  {
     id: 1,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imageUrl: "/banniere4.jpg",
-  },
-  {
+  }, */
+  /*  {
     id: 2,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imageUrl: "/banniere3.jpg",
-  },
+  }, */
   {
     id: 3,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imageUrl: "/banniere2(1)(1).jpg",
   },
-  {
+  /* {
     id: 4,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imageUrl: "/banniere1.jpg",
-  },
+  }, */
 ];
 
 interface PubSousCategorieProps {
