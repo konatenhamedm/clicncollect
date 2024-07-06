@@ -107,11 +107,7 @@ function Page({ params }: { params: { marque: string } }) {
       case 2:
         return <Step2 />;
       case 3:
-        return (
-          <>
-          
-          </>
-        );
+        return <></>;
       case 4:
         return <h1>Final Step</h1>;
       default:
@@ -120,52 +116,35 @@ function Page({ params }: { params: { marque: string } }) {
   };
 
   return (
-    <div className="w-full pb-4 py-7 mt-[45px] bg-[#F5F5F5] items-center justify-center grid grid-cols-1">
-      <div className="pt-4 items-center justify-center pb-4">
-        <div className="w-full items-center justify-center grid grid-cols-5">
-          <div></div>
-          <div className="col-span-3">
-            <div className="bg-white max-w-3xl shadow overflow-hidden pb-4 items-center justify-center">
-              <FormStep />
-              {/* <form onSubmit={handleSubmit} className="flex flex-col">
-                {renderStep()}
-                <dl>
-                  <div className="bg-white px-4 py-3 sm:grid sm:grid-cols-5 sm:gap-4 sm:px-6">
-                    <dt className="text-sm font-medium text-gray-500 sm:col-span-4">
-                      {currentStep > 1 && (
-                        <button
-                          type="button"
-                          className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md"
-                          onClick={prevStep}
-                        >
-                          Précedent
-                        </button>
-                      )}
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 items-end justify-end">
-                      {currentStep < 4 ? (
-                        <button
-                          type="submit"
-                          className="bg-gradient-to-r from-[#f1a730] to-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
-                          onClick={handleNextStep}
-                        >
-                          Continuer
-                        </button>
-                      ) : (
-                        <button
-                          type="submit"
-                          className="bg-gradient-to-r from-[#f1a730] to-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
-                        >
-                          Soumettre
-                        </button>
-                      )}
-                    </dd>
-                  </div>
-                </dl>
-              </form> */}
+    <div className="w-full py-7 mt-[45px] bg-[#F5F5F5] flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
+        <div className="bg-white max-w-3xl shadow overflow-hidden w-full mx-4 lg:mx-0 pb-4 flex flex-col items-center">
+          <FormStep />
+          {/* 
+          <form onSubmit={handleSubmit} className="flex flex-col w-full px-4">
+            {renderStep()}
+            <div className="flex justify-between mt-4">
+              {currentStep > 1 && (
+                <button
+                  type="button"
+                  className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md"
+                  onClick={prevStep}
+                >
+                  Précedent
+                </button>
+              )}
+              <button
+                type="submit"
+                className={`bg-gradient-to-r from-[#f1a730] to-[#f1a730] text-white font-bold py-2 px-4 rounded-md transition ease-in-out duration-150 ${
+                  currentStep < 4 ? "hover:bg-[#f1a730] hover:to-[#95ebdb]" : ""
+                }`}
+                onClick={handleNextStep}
+              >
+                {currentStep < 4 ? "Continuer" : "Soumettre"}
+              </button>
             </div>
-          </div>
-          <div></div>
+          </form>
+          */}
         </div>
       </div>
     </div>
