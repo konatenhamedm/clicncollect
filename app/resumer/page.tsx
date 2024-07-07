@@ -8,7 +8,7 @@ function Page() {
           <div className="bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg pb-4 items-center justify-center">
             <div className="px-4 py-5 sm:px-6 items-center justify-center">
               <h3 className="text-xl leading-6 font-normal text-red-500 items-center justify-center text-center">
-                IMPORTANT A SAVOIR
+                Votre demande a bien été reçue
               </h3>
               {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">
               Details and informations about user.
@@ -19,19 +19,12 @@ function Page() {
                 <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
                   <dt className="text-xl font-normal text-black sm:col-span-2">
                     <p className="mt-1 max-w-2xl text-xl text-black justify-center text-justify">
-                      Le site ClicnCollect s’occupe{" "}
+                      {/*  Le site ClicnCollect s’occupe{" "} */}
                       <span className="font-normal">
                         {" "}
-                        uniquement de la réception de vos colis en France, puis
-                        de leur réacheminent à Abidjan afin que vous puissiez
-                        les récupérer.
-                      </span>{" "}
-                      Vous effectuez vos achats directement auprès de vos
-                      marques. Nous mettons à votre disposition notre adresse de
-                      Paris afin que vos colis y soient livrés. Apres réception
-                      de vos colis à notre adresse de Paris, nous nous occupons
-                      de leur réacheminement à Abidjan. Délai de livraison à
-                      Abidjan 1-7j après réception.
+                        Cher client, votre demande a bien été reçue. Vous
+                        recevrez un message sur votre espace.
+                      </span>
                     </p>
                   </dt>
                 </div>
