@@ -53,22 +53,7 @@ function Page() {
                     </p>
                   </dt>
                 </div>
-                <div className="bg-white px-2 py-5 sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 ">
-                  <dt className="text-lg font-normal text-black ">
-                    <Image
-                      src="/adidas.jpg"
-                      alt="logo"
-                      width={200}
-                      height={100}
-                      className="w-[3rem] md:w-[5rem]"
-                    />
-                  </dt>
-                  <dd className="mt-1 font-normal text-lg text-black sm:mt-0 sm:col-span-4">
-                    <a href="">
-                      Cliquez ici pour être redirigé sur le site de la marque
-                    </a>
-                  </dd>
-                </div>
+
                 <div className="bg-white px-0 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-70px]">
                   <dt className="text-lg font-normal text-black "></dt>
                   <dd className="font-normal text-lg  text-black sm:mt-0 sm:col-span-4">
@@ -82,7 +67,6 @@ function Page() {
                   <dt className="text-sm font-medium text-gray-500 sm:col-span-4"></dt>
                   <dd className="mt-1 text-sm text-gray-900 sm:mt-0 items-end justify-end">
                     <button
-                      onClick={() => router.push("/formulaire/")}
                       className="bg-[#f1a730] text-white font-normal py-2 px-4 rounded-md  hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
                       type="submit"
                     >
