@@ -42,7 +42,7 @@ function Header() {
               alt="logo"
               width={200}
               height={200}
-              className="w-[6rem] md:w-[16rem]"
+              className="w-[6rem] md:w-[16rem] h-[2rem]"
             />
           </a>
 

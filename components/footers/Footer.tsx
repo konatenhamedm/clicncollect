@@ -79,8 +79,15 @@ function Footer() {
                   href="#"
                   className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
                 >
-                  Conditions Générales d'Utilisation Cookies Termes &
-                  confidentialités
+                  Cookies
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
+                >
+                  Termes & confidentialités
                 </a>
               </li>
             </ul>
@@ -174,12 +181,8 @@ function Footer() {
         <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
           <p className="text-gray-300 text-[15px]">
             Copyright © 2024
-            <a
-              href="https://readymadeui.com/"
-              target="_blank"
-              className="hover:underline mx-1"
-            >
-              clicknCollect
+            <a href="/" target="_blank" className="hover:underline mx-1">
+              ClicnCollect
             </a>
             Tous droits réservés.
           </p>
