@@ -1,15 +1,11 @@
-"use client";
+import { Formik, Form, FormikHelpers } from "formik";
 import React, { ReactElement, useEffect, useState } from "react";
-import { Formik, Form } from "formik";
-import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Button, Stepper, Step, StepLabel } from "@material-ui/core";
 import Step1 from "../Step1";
 import Step2 from "../Step2";
 import Step3 from "../Step3";
-import Step4 from "../Step4";
 import Modal from "@/components/modals/Modal";
-import Image from "next/image";
 
 const validationSchema = [
   Yup.object({}),
@@ -65,12 +61,6 @@ const FormStep = () => {
     <>
       <div className="pt-4  items-center justify-center pb-4">
         <div className="bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg pb-4 items-center justify-center">
-          {/* <div className="px-4 py-5 sm:px-6 items-center justify-center">
-            <h3 className="text-xl leading-6 font-normal text-red-500 items-center justify-center text-center">
-              IMPORTANT A SAVOIR
-            </h3>
-           
-          </div> */}
           <div className="border-t border-gray-200">
             <dl>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
@@ -104,14 +94,6 @@ const FormStep = () => {
   );
 
   const [showModal, setShowModal] = useState(false);
-  const [title, setTitle] = useState("dd");
-  const [size, setSize] = useState("3xl");
-  const [gradient, setGradient] = useState(false);
-  const [closeExiste, setCloseExiste] = useState(true);
-  const [label, setLabel] = useState("");
-  const [modalContent, setModalContent] = useState<React.ReactElement>();
-  const [img, setImg] = useState(null);
-  const [errorServeur, setErrorServeur] = useState(false);
 
   const openModal = (
     content: ReactElement,
@@ -122,23 +104,17 @@ const FormStep = () => {
     label: string,
     errorServeur: boolean
   ) => {
-    setModalContent(content);
-    setTitle(title);
-    setCloseExiste(existe);
-    setSize(size);
-    setGradient(gradient);
-    setLabel(label);
     setShowModal(true);
-    setErrorServeur(errorServeur);
   };
 
   const closeModal = () => {
     setShowModal(false);
-    setModalContent(<div></div>);
   };
 
-  const handleSubmit = (values: any, actions: any) => {
-    alert(isLastStep());
+  const handleSubmit = (
+    values: typeof initialValues,
+    actions: FormikHelpers<typeof initialValues>
+  ) => {
     if (isLastStep()) {
       openModal(
         content,
@@ -213,13 +189,13 @@ const FormStep = () => {
       <Modal
         show={showModal}
         onClose={closeModal}
-        content={<>{modalContent}</>}
-        size={size}
-        title={title}
-        actionLabel={label}
-        onCloseExiste={closeExiste}
-        gradient={gradient}
-        errorServeur={errorServeur}
+        content={<>{content}</>}
+        size="lg"
+        title="Votre demande a bien été reçue"
+        actionLabel=""
+        onCloseExiste={true}
+        gradient={false}
+        errorServeur={false}
       />
     </>
   );
