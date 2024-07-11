@@ -66,8 +66,9 @@ function Page({ params }: { params: { marque: string } }) {
                   />
                 </dt>
                 <dd className="mt-1 font-normal text-lg text-black sm:mt-0 sm:col-span-4">
-                  <a href="">
-                    Cliquez ici pour être redirigé sur le site de la marque
+                  <a href="" className="underline text-blue-400">
+                    Cliquez <span>ici</span> pour être redirigé sur le site de
+                    la marque
                   </a>
                 </dd>
               </div>

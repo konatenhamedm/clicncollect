@@ -1,22 +1,24 @@
 import React from "react";
 
 interface InputProps {
-  formik: any;
+  values: any;
   type: string;
   name: string;
   placeholder: string;
   existe: boolean;
   longeur: number;
   message?: string;
+  handleChange?: any;
 }
 const FormArea = ({
-  formik,
+  values,
   type,
   name,
   placeholder,
   existe,
   longeur,
   message,
+  handleChange,
 }: InputProps) => {
   return (
     <>
@@ -35,13 +37,13 @@ const FormArea = ({
       <p></p> */}
 
       <textarea
-        className="bg-white flex w-full text-black text-sm border-2 border-black   placeholder-custom-placeholder placeholder-black  rounded-sm p-2 mb-4 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
+        className="bg-white flex w-full text-black text-sm border-2 border-gray   placeholder-custom-placeholder placeholder-normal  rounded-sm p-2 mb-4 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-gray transition ease-in-out duration-150"
         rows={3}
         name={name}
         placeholder={placeholder}
-        onChange={formik.handleChange}
-        value={formik.values.nombre}
-        onBlur={formik.handleBlur}
+        onChange={handleChange}
+        value={values + "." + [name]}
+        /*  onBlur={formik.handleBlur} */
         onKeyPress={(event) => {
           if (existe) {
             if (longeur == 1) {

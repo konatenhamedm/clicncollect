@@ -7,9 +7,7 @@ function Page() {
   return (
     <>
       <div className=" flex pb-4 py-7 mt-[100px]  bg-[#F5F5F5] items-center justify-center">
-        <div>
-          <FormStep />
-        </div>
+        <FormStep />
       </div>
     </>
   );

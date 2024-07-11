@@ -18,7 +18,7 @@ const ItemPubTester: React.FC<ItemProps> = ({
   lien,
 }) => {
   return (
-    <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
+    /*  <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
       <div className="z-20 relative text-white container">
         <p className="leading-normal mb-1 mt-5">{desc}</p>
         <Button color="primary" variant="ghost">
@@ -37,6 +37,47 @@ const ItemPubTester: React.FC<ItemProps> = ({
           priority
           className="z-0"
         />
+      </div>
+    </div> */
+
+    <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
+      <div className="z-20 relative text-white container">
+        {/*  <p className="leading-normal mb-1 mt-5"></p>
+      <Button color="primary" variant="ghost">
+        <a href={lien ? lien : "#"} className="text-white " target="_blank">
+          {bouton ? bouton : "Visiter le lien"}
+        </a>
+      </Button> */}
+      </div>
+      <div className="absolute inset-0 z-10 w-full h-full">
+        {/*   <img src={image} alt=""  /> */}
+        <Image
+          src={image}
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          priority
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="z-20 relative text-white container flex flex-col justify-center items-start h-full">
+        <p className="leading-normal mb-1"></p>
+        <Button
+          className="text-tiny w-[143px] opacity-75"
+          color="primary"
+          radius="full"
+          size="sm"
+        >
+          <a href={lien ? lien : "#"} className="text-white" target="_blank">
+            {bouton ? bouton : "Visiter le lien"}
+          </a>
+        </Button>
+        {/* <Button color="primary" variant="ghost">
+        <a href={lien ? lien : "#"} className="text-white " target="_blank">
+          {bouton ? bouton : "Visiter le lien"}
+        </a>
+      </Button> */}
       </div>
     </div>
   );
