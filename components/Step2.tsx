@@ -73,7 +73,7 @@ const Step2 = () => {
                 </a>
               </dd>
             </div>
-            <div className="bg-white px-2 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-40px] md:mt-[-0px]">
+            <div className="bg-white px-2 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-40px] md:mt-[-80px]">
               <dt className="text-lg font-normal text-black "></dt>
               <dd className="font-normal text-lg  text-black sm:mt-0 sm:col-span-4">
                 <p className="font-extranormal">
