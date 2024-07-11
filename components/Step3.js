@@ -41,11 +41,11 @@ const Step3 = () => {
               Renseignez les informations pour vous faire livrer par ClicnCollect à Abidjan
             </p>
           </div>
-          <div className="border-t border-gray-200">
+          <div className="border-t border-gray-200 px-4">
           <dl>
               <div className="bg-gray-50 px-4 py-5 sm:px-6 w-full">
-                <Grid container spacing={2}>
-                  <Grid item xs={6}>
+                {/* <Grid container spacing={2} >
+                  <Grid item xs={6}> */}
                     <label
                       htmlFor="nom"
                       className={`block font-latoBold text-sm pb-2 ${touched.nom && errors.nom ? "text-red-400" : ""}`}
@@ -62,8 +62,8 @@ const Step3 = () => {
                       error={touched.nom && Boolean(errors.nom)}
                       helperText={touched.nom && errors.nom}
                     />
-                  </Grid>
-                  <Grid item xs={6}>
+                 {/*  </Grid>
+                  <Grid item xs={6}> */}
                     <label
                       htmlFor="prenoms"
                       className={`block font-latoBold text-sm pb-2 ${touched.prenoms && errors.prenoms ? "text-red-400" : ""}`}
@@ -80,10 +80,10 @@ const Step3 = () => {
                       error={touched.prenoms && Boolean(errors.prenoms)}
                       helperText={touched.prenoms && errors.prenoms}
                     />
-                  </Grid>
-                </Grid>
-                <Grid container spacing={2}>
-                  <Grid item xs={6}>
+                 {/*  </Grid>
+                </Grid> */}
+               {/*  <Grid container spacing={2}>
+                  <Grid item xs={6}> */}
                     <label
                       htmlFor="email"
                       className={`block font-latoBold text-sm pb-2 ${touched.email && errors.email ? "text-red-400" : ""}`}
@@ -100,8 +100,8 @@ const Step3 = () => {
                       error={touched.email && Boolean(errors.email)}
                       helperText={touched.email && errors.email}
                     />
-                  </Grid>
-                  <Grid item xs={6}>
+                 {/*  </Grid>
+                  <Grid item xs={6}> */}
                     <label
                       htmlFor="numero"
                       className={`block font-latoBold text-sm pb-2 ${touched.numero && errors.numero ? "text-red-400" : ""}`}
@@ -118,8 +118,8 @@ const Step3 = () => {
                       error={touched.numero && Boolean(errors.numero)}
                       helperText={touched.numero && errors.numero}
                     />
-                  </Grid>
-                </Grid>
+                {/*   </Grid>
+                </Grid> */}
                 <label
                   htmlFor="montant"
                   className={`block font-latoBold text-sm pb-2 ${touched.montant && errors.montant ? "text-red-400" : ""}`}
@@ -205,21 +205,21 @@ const Step3 = () => {
                   "Option de livraison*"
                 </label>
                 <select
-                  className="bg-white flex w-full text-black text-sm border-2 border-gray placeholder-custom-placeholder placeholder-gray rounded-sm p-2 mb-4 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out durée-150"
-                  name="option"
-                  onChange={(e) => {
-                    handleChange(e);
-                    setSelectedOption(e.target.value);
-                  }}
-                  value={values.option}
-                >
-                  <option key="1" value="option1">
-                    Retrait dans notre point relais à Cocody Angré
-                  </option>
-                  <option key="2" value="option2">
-                    Livraison à votre domicile
-                  </option>
-                </select>
+                    className="bg-white block w-full text-black text-sm border-2 border-gray placeholder-custom-placeholder placeholder-gray rounded-sm p-2 mb-4 sm:mb-0 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
+                    name="option"
+                    onChange={(e) => {
+                      handleChange(e);
+                      setSelectedOption(e.target.value);
+                    }}
+                    value={values.option}
+                  >
+                    <option key="1" value="option1">
+                      Retrait dans notre point relais à Cocody Angré
+                    </option>
+                    <option key="2" value="option2">
+                      Livraison à votre domicile
+                    </option>
+                  </select>
                 {selectedOption === "option1" && (
                   <h3 className="text-xl">
                     Nous sommes ouverts du lundi au samedi de 9h à 18h

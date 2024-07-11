@@ -154,9 +154,8 @@ const FormStep = () => {
             {step === 1 && <Step2 />}
             {step === 2 && <Step3 />}
             {/* {step === 3 && <Step4 />} */}
-
-            <div className="bg-white px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-              <dt className="text-sm font-medium text-gray-500">
+            <div className="bg-white px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center ">
+              <dt className="text-sm font-medium text-gray-500 md:px-0 px-4">
                 {step > 0 && (
                   <Button
                     style={{
@@ -173,7 +172,7 @@ const FormStep = () => {
                   </Button>
                 )}
               </dt>
-              <dd className="mt-4 sm:mt-0">
+              <dd className="mt-4 sm:mt-0 flex justify-between w-full md:px-0 px-4">
                 <button
                   type="submit"
                   disabled={isSubmitting}

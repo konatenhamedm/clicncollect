@@ -11,12 +11,12 @@ const Step1 = () => {
       <div className="w-full">
         <div className="bg-white shadow-md overflow-hidden ">
           <div className="px-7 py-8 ">
-            <h3 className="text-[8px] font-normal text-black md:text-2xl">
+            <h3 className="text-[12px] font-normal text-black md:text-2xl">
               Nos tarifs de livraison pour l’envoi de vos colis de Paris à
               Abidjan
             </h3>
           </div>
-          <div className="border-t border-gray-200">
+          <div className="border-t border-gray-200 px-4">
             <dl>
               <div className="bg-gray-50 px-6 py-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <dt className="text-lg font-normal text-black sm:col-span-2">
@@ -34,18 +34,6 @@ const Step1 = () => {
                   12,000 FCFA/KG
                 </dd>
               </div>
-              {/*   <div className="bg-white px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                <dt className="text-sm font-medium text-gray-500"></dt>
-                <dd className="mt-4 sm:mt-0">
-                  <button
-                    onClick={() => router.push("/important/")}
-                    className=" bg-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
-                    type="submit"
-                  >
-                    Continuer
-                  </button>
-                </dd>
-              </div> */}
             </dl>
           </div>
         </div>

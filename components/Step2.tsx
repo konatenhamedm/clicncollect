@@ -18,7 +18,7 @@ const Step2 = () => {
               Details and informations about user.
             </p> */}
         </div>
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 px-4">
           <dl>
             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
               <dt className="text-xl font-normal text-black sm:col-span-2">
@@ -73,7 +73,7 @@ const Step2 = () => {
                 </a>
               </dd>
             </div>
-            <div className="bg-white px-0 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-70px]">
+            <div className="bg-white px-2 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-40px] md:mt-[-0px]">
               <dt className="text-lg font-normal text-black "></dt>
               <dd className="font-normal text-lg  text-black sm:mt-0 sm:col-span-4">
                 <p className="font-extranormal">
@@ -81,35 +81,6 @@ const Step2 = () => {
                 </p>
               </dd>
             </div>
-
-            {/*   <div className="bg-white px-4 py-3 sm:grid sm:grid-cols-5 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500 sm:col-span-4"></dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:mt-0 items-end justify-end">
-                <button
-                  onClick={() =>
-                    router.push("/formulaire/")
-                  }
-                  className="bg-[#f1a730] text-white font-normal py-2 px-4 rounded-md  hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
-                  type="submit"
-                >
-                  Continuer
-                </button>
-              </dd>
-            </div> */}
-            {/* <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">Salary</dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  $10,000
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">About</dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                  To get social media testimonials like these, keep your
-                  customers engaged with your social media accounts by posting
-                  regularly yourself
-                </dd>
-              </div> */}
           </dl>
         </div>
       </div>
