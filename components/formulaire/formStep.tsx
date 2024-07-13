@@ -1,3 +1,4 @@
+"use client";
 import { Formik, Form, FormikHelpers } from "formik";
 import React, { ReactElement, useEffect, useState } from "react";
 import * as Yup from "yup";
@@ -6,6 +7,7 @@ import Step1 from "../Step1";
 import Step2 from "../Step2";
 import Step3 from "../Step3";
 import Modal from "@/components/modals/Modal";
+import { useRouter } from "next/navigation";
 
 const validationSchema = [
   Yup.object({}),
@@ -56,7 +58,7 @@ const FormStep = () => {
   const steps = ["Informations", "Important", "Formulaire"];
 
   const isLastStep = () => step === steps.length - 1;
-
+  const router = useRouter();
   const content = (
     <>
       <div className="pt-4  items-center justify-center pb-4">
@@ -155,32 +157,49 @@ const FormStep = () => {
             {step === 2 && <Step3 />}
             {/* {step === 3 && <Step4 />} */}
             <div className="bg-white px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center  justify-between">
-              <dt className="text-sm font-medium text-gray-500 md:px-2 px-4 mr-4">
-                {step > 0 && (
-                  <Button
-                    style={{
-                      backgroundColor: "#f1a730",
-                      color: "white",
-                      fontWeight: "bold",
-                      padding: "0.5rem 1rem",
-                      borderRadius: "0.375rem",
-                      transition: "background-color 150ms ease-in-out",
-                    }}
-                    onClick={() => setStep(step - 1)}
+              <div className="w-full grid grid-cols-2 justify-between">
+                <div>
+                  {step > 0 ? (
+                    <Button
+                      style={{
+                        backgroundColor: "#f1a730",
+                        color: "white",
+                        fontWeight: "bold",
+                        padding: "0.5rem 1rem",
+                        borderRadius: "0.375rem",
+                        transition: "background-color 150ms ease-in-out",
+                      }}
+                      onClick={() => setStep(step - 1)}
+                    >
+                      Retour
+                    </Button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => router.push("/")}
+                      className="bg-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
+                    >
+                      Retour
+                    </button>
+                  )}
+                </div>
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
                   >
-                    Retour
-                  </Button>
-                )}
+                    {isLastStep() ? "Soumettre" : "Continuer"}
+                  </button>
+                </div>
+              </div>
+
+              {/*  <dt className="text-sm font-medium text-gray-500 md:px-2 px-4 mr-4">
+                
               </dt>
               <dd className="mt-4 sm:mt-0 flex justify-between w-full md:px-4 px-4">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-[#f1a730] text-white font-bold py-2 px-4 rounded-md hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
-                >
-                  {isLastStep() ? "Soumettre" : "Continuer"}
-                </button>
-              </dd>
+               
+              </dd> */}
             </div>
           </Form>
         )}

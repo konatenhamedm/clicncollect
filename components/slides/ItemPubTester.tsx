@@ -51,19 +51,20 @@ const ItemPubTester: React.FC<ItemProps> = ({
       </div>
       <div className="absolute inset-0 z-10 w-full h-full">
         {/*   <img src={image} alt=""  /> */}
-        <Image
+        <img
+          style={{ objectFit: "cover" }}
           src={image}
           alt=""
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-          className="w-full h-full object-cover"
+          // layout="fill"
+          //objectFit="cover"
+          //quality={100}
+          //priority
+          className="w-full h-full object-cover brightness-125 md:mt-[-100px] mt-0"
         />
       </div>
       <div className="z-20 relative text-white container flex flex-col justify-center items-start h-full">
         <p className="leading-normal mb-1"></p>
-        <Button
+        {/* <Button
           className="text-tiny w-[143px] opacity-75"
           color="primary"
           radius="full"
@@ -72,7 +73,7 @@ const ItemPubTester: React.FC<ItemProps> = ({
           <a href={lien ? lien : "#"} className="text-white" target="_blank">
             {bouton ? bouton : "Visiter le lien"}
           </a>
-        </Button>
+        </Button> */}
         {/* <Button color="primary" variant="ghost">
         <a href={lien ? lien : "#"} className="text-white " target="_blank">
           {bouton ? bouton : "Visiter le lien"}
