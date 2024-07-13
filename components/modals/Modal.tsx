@@ -76,7 +76,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
               gradient ? "text-white" : "text-black"
             }`}
           >
-            {title} {actionLabel}!
+            {title}
           </h3>
           <div className="relative flex py-3.5 items-center">
             <div className="flex-grow border-t border-gray-400"></div>
@@ -113,7 +113,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
               content
             )}
             {actionLabel && (
-              <div className="relative flex py-3.5 items-center">
+              <div className="relative flex py-1 items-center">
                 <div className="flex-grow border-t border-gray-400"></div>
                 <div className="flex-grow border-t border-gray-400"></div>
               </div>

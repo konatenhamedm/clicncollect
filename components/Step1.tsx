@@ -23,7 +23,10 @@ const Step1 = () => {
                   Retrait dans notre point relais à Abidjan Angré
                 </dt>
                 <dd className="text-xl font-extrabold text-gray-900">
-                  10,000 FCFA/KG
+                  {/* 10,000 FCFA/KG */}{" "}
+                  <a href="#" className="underline text-blue-400">
+                    Voir devis
+                  </a>
                 </dd>
               </div>
               <div className="bg-white px-6 py-5 grid grid-cols-1 sm:grid-cols-3 gap-4 border-b-2">
@@ -31,7 +34,10 @@ const Step1 = () => {
                   Livraison à votre domicile à Abidjan
                 </dt>
                 <dd className="text-xl font-extrabold text-black">
-                  12,000 FCFA/KG
+                  {/* 12,000 FCFA/KG */}
+                  <a href="#" className="underline text-blue-400">
+                    Voir devis
+                  </a>
                 </dd>
               </div>
             </dl>
