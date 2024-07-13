@@ -96,6 +96,14 @@ const FormStep = () => {
   );
 
   const [showModal, setShowModal] = useState(false);
+  const [title, setTitle] = useState("dd");
+  const [size, setSize] = useState("3xl");
+  const [gradient, setGradient] = useState(false);
+  const [closeExiste, setCloseExiste] = useState(true);
+  const [label, setLabel] = useState("");
+  const [modalContent, setModalContent] = useState<React.ReactElement>();
+  const [img, setImg] = useState(null);
+  const [errorServeur, setErrorServeur] = useState(false);
 
   const openModal = (
     content: ReactElement,
@@ -106,7 +114,14 @@ const FormStep = () => {
     label: string,
     errorServeur: boolean
   ) => {
+    setModalContent(content);
+    setTitle(title);
+    setCloseExiste(existe);
+    setSize(size);
+    setGradient(gradient);
+    setLabel(label);
     setShowModal(true);
+    setErrorServeur(errorServeur);
   };
 
   const closeModal = () => {
@@ -123,8 +138,8 @@ const FormStep = () => {
         "Votre demande a bien été reçue",
         true,
         "lg",
-        false,
-        "",
+        true,
+        "Fermer",
         false
       );
       actions.setSubmitting(false);
@@ -210,10 +225,10 @@ const FormStep = () => {
         content={<>{content}</>}
         size="lg"
         title="Votre demande a bien été reçue"
-        actionLabel=""
+        actionLabel={label}
         onCloseExiste={true}
-        gradient={false}
-        errorServeur={false}
+        gradient={gradient}
+        errorServeur={errorServeur}
       />
     </>
   );

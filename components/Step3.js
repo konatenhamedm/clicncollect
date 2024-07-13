@@ -221,9 +221,12 @@ const Step3 = () => {
                     </option>
                   </select>
                 {selectedOption === "option1" && (
-                  <h3 className="text-xl">
+                  <>
+                  <br/>
+                  <h3 className="text-xl text-red-500">
                     Nous sommes ouverts du lundi au samedi de 9h à 18h
                   </h3>
+                  </>
                 )}
                 {selectedOption === "option2" && (
                   <>

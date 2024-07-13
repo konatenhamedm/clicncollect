@@ -52,7 +52,7 @@ const Step2 = () => {
                 <p className="mt-1 max-w-2xl text-lg text-black">
                   Code Postal: 75019,
                   <br /> Adresse: 54 Rue Riquet <br /> Complément d’adresse:
-                  Appt 0625 Chez KONE MEVALY <br /> Contact: +33 6 29 77 03 51
+                  Appt 0625 Chez CLICNCOLLECT <br /> Contact: +33 6 29 77 03 51
                 </p>
               </dt>
             </div>

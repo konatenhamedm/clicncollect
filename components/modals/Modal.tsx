@@ -57,8 +57,8 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
 "
       >
         <div
-          className={` mt-[-276px]
-        modal-box w-1/3 border-2 border-double cursor-pointer px-4 ${
+          className={` mt-[-150px]
+        modal-box w-1/3 border-2 border-[#f1a730] cursor-pointer px-4 bg-gradient-to-r from-[#75d4c3] to-[#f1a730] ${
           gradient ? "bg-gradient-to-r from-[#75d4c3] to-[#f1a730]" : "bg-white"
         }
         `}
@@ -68,7 +68,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
               <div
                 onClick={onClose}
                 className={`btn btn-sm btn-circle btn-ghost absolute px-5 font-bold mt-[9px]
-                ${gradient ? "text-white" : "text-black"}
+                ${gradient ? "text-white" : "text-white"}
                 `}
               >
                 ✕
@@ -76,11 +76,11 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
             )}
           </form>
           <h3
-            className={`font-bold text-lg flex justify-center ${
-              gradient ? "text-white" : "text-black"
+            className={`font-bold text-lg flex justify-center mt-[9px] ${
+              gradient ? "text-white" : "text-white"
             }`}
           >
-            {title}!
+            {title} {actionLabel}!
           </h3>
           <div className="relative flex py-3.5 items-center">
             <div className="flex-grow border-t border-gray-400 group-hover:border-white group-hover:text-white duration-100"></div>
@@ -128,14 +128,15 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
               </div>
             )}
 
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-2 justify-items-end pb-4">
               <div></div>
               <div></div>
               <div>
                 {actionLabel && (
                   <button
-                    type="submit"
-                    className=" bg-gradient-to-r from-[#75d4c3] to-[#f1a730] font-latoBold text-sm text-white py-3 mt-0 right-2 hover:bg-[#f1a730] hover:to-[#75d4c3]  rounded-lg w-full transition ease-in-out duration-150"
+                    onClick={onClose}
+                    type="button"
+                    className="bg-[#75d4c3]  text-white font-bold py-2 px-4 rounded-md hover:bg-[#75d4c3] hover:to-[#95ebdb] transition ease-in-out duration-150"
                   >
                     {actionLabel}
                   </button>
