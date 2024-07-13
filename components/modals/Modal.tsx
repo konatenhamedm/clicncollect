@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
 interface ModalDynamiqueProps {
@@ -36,7 +37,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
   if (!show) {
     return null;
   }
-
+  const router = useRouter();
   return (
     <>
       <div
@@ -125,7 +126,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
               <div>
                 {actionLabel && (
                   <button
-                    onClick={onClose}
+                    onClick={router.push("/")}
                     type="button"
                     className="bg-[#75d4c3] text-white font-bold py-2 px-4 rounded-md hover:bg-[#95ebdb] transition ease-in-out duration-150"
                   >

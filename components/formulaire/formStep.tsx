@@ -66,16 +66,16 @@ const FormStep = () => {
           <div className="border-t border-gray-200">
             <dl>
               <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
-                <dt className="text-xl font-normal text-black sm:col-span-2">
-                  <p className="mt-1 max-w-xl text-md text-black justify-center text-justify">
+                <dt className="text-normal font-normal text-black sm:col-span-2">
+                  <p className="mt-1 max-w-xl text-normal text-black justify-center text-justify">
                     Cher client, votre demande a bien été reçue. Vous recevrez
                     un mail de confirmation.
                   </p>
                 </dt>
               </div>
               <div className="bg-white px-4 py-1 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
-                <dt className="text-lg font-normal text-black sm:col-span-2 border-dashed border-0 px-2">
-                  <p className="mt-1 max-w-xl text-md text-black justify-center text-center">
+                <dt className="text-normal font-normal text-black sm:col-span-2 border-dashed border-0 px-2">
+                  <p className="mt-1 max-w-xl text-normal text-black justify-center text-center">
                     Pour toute question, n’hésitez pas à nous contacter dans la
                     rubrique aide ou au numéro suivant +225 0704314164.
                   </p>
