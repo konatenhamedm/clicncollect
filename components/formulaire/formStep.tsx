@@ -61,7 +61,7 @@ const FormStep = () => {
   const router = useRouter();
   const content = (
     <>
-      <div className="pt-4  items-center justify-center pb-4">
+      <div className="pt-4 items-center justify-center pb-4">
         <div className="bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg pb-4 items-center justify-center">
           <div className="border-t border-gray-200">
             <dl>
@@ -73,7 +73,7 @@ const FormStep = () => {
                   </p>
                 </dt>
               </div>
-              <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6 ">
+              <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
                 <dt className="text-lg font-normal text-black sm:col-span-2 border-dashed border-2 border-blue-400 px-2">
                   <p className="mt-1 max-w-2xl text-xl text-black justify-center text-center">
                     Pour toute question, n’hésitez pas à nous contacter dans la
@@ -81,7 +81,7 @@ const FormStep = () => {
                   </p>
                 </dt>
               </div>
-              <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6 ">
+              <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
                 <dt className="text-lg font-bold text-black sm:col-span-2 border-dashed border-2 border-blue-400 px-2">
                   <p className="mt-1 max-w-2xl text-xl text-black justify-center text-center">
                     Merci
