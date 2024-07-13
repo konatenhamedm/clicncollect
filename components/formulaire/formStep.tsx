@@ -69,12 +69,12 @@ const FormStep = () => {
                 <dt className="text-xl font-normal text-black sm:col-span-2">
                   <p className="mt-1 max-w-2xl text-xl text-black justify-center text-justify">
                     Cher client, votre demande a bien été reçue. Vous recevrez
-                    un message sur votre espace.
+                    un mail de confirmation.
                   </p>
                 </dt>
               </div>
               <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6 ">
-                <dt className="text-lg font-bold text-black sm:col-span-2 border-dashed border-2 border-blue-400 px-2">
+                <dt className="text-lg font-normal text-black sm:col-span-2 border-dashed border-2 border-blue-400 px-2">
                   <p className="mt-1 max-w-2xl text-xl text-black justify-center text-center">
                     Pour toute question, n’hésitez pas à nous contacter dans la
                     rubrique aide ou au numéro suivant +225 0704314164.
