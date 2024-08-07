@@ -40,8 +40,12 @@ const Step2 = () => {
                   vous permettons de faire votre shopping directement sur le
                   site de vos marques préférées en France et de vous faire
                   livrer à Abidjan par Chronopost ou DHL à des tarifs réduits et
-                  une garantie lors du transport. Attention, en cas de retour
-                  les frais sont entièrement à vore charge.
+                  une garantie lors du transport.Vous procéderez au paiement des
+                  frais de livraison une fois votre shopping terminé. Veuillez
+                  consulter la grille de prix ci-dessous à titre d’information.{" "}
+                  <br></br>
+                  <br></br> Attention, en cas de retour les frais sont
+                  entièrement à vore charge.
                 </p>
               </dt>
             </div>
@@ -63,8 +67,12 @@ const Step2 = () => {
               </dt>
             </div> */}
             <div className="px-4 py-5 sm:px-6 items-center justify-center">
-              <h6 className="text-md  font-normal text-black items-center justify-center text-center">
-                Options de livraison
+              <h6 className="text-md leading-6   font-normal text-black items-center justify-center text-center">
+                Options de livraison{" "}
+                <span className="">
+                  {" "}
+                  <br /> (Livraison entre 1 et 7 jours)
+                </span>
               </h6>
               {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">
               Details and informations about user.
@@ -74,7 +82,7 @@ const Step2 = () => {
               <dl>
                 <div className="bg-white px-0 py-5 grid grid-cols-3 sm:grid-cols-3 gap-4">
                   <dt className="sm:text-lg text-sm font-normal text-black sm:col-span-2 col-span-2">
-                    Retrait dans notre point relais à Abidjan Angré
+                    Retrait dans notre point relais à Abidjan riviera 2
                   </dt>
                   <dd className="sm:text-xl text-sm font-extrabold text-gray-900">
                     {/* 10,000 FCFA/KG */}{" "}
@@ -111,6 +119,23 @@ const Step2 = () => {
                   Cliquez <span>ici</span> pour être redirigé sur le site de la
                   marque
                 </a>
+              </dd>
+            </div>
+            <div className="bg-white px-0 py-8  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6  mt-[-40px] md:mt-[-80px]">
+              <dt className="text-lg font-normal text-black "></dt>
+              <dd className="font-normal sm:text-lg text-sm  text-black sm:mt-0 sm:col-span-4">
+                <p className="font-extranormal">
+                  <input
+                    type="checkbox"
+                    id="vehicle1"
+                    name="vehicle1"
+                    value="Bike"
+                  />
+                  <span className="px-2 text-[12px]">
+                    En poursuivant, je reconnais avoir bien pris connaissance de
+                    la note d'information ci-dessus
+                  </span>
+                </p>
               </dd>
             </div>
             {/* <div className="bg-white px-6 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6  mt-[-40px] md:mt-[-80px]">

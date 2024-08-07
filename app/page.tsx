@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <span className="text-black font-normal text-[9px] md:text-xl">
               Achetez sur le site de vos marques en France et faites vous livrer
-              à Abidjan par ClicnCollect
+              à Abidjan grace à ClicnCollect
             </span>
             <span className="text-green-500 text-sm font-semibold ml-2"></span>
           </div>
