@@ -40,7 +40,7 @@ const initialValues = {
 };
 
 const FormStep = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
 
   // Use useEffect to load the step from localStorage when the component mounts
   useEffect(() => {
@@ -55,7 +55,7 @@ const FormStep = () => {
     localStorage.setItem("currentStep", String(step));
   }, [step]);
 
-  const steps = ["Informations", "Important", "Formulaire"];
+  const steps = [/* "Informations",  */ "Important" /* "Formulaire" */];
 
   const isLastStep = () => step === steps.length - 1;
   const router = useRouter();
@@ -167,11 +167,11 @@ const FormStep = () => {
                 </Step>
               ))}
             </Stepper>
-            {step === 0 && <Step1 />}
+            {/*  {step === 0 && <Step1 />} */}
             {step === 1 && <Step2 />}
-            {step === 2 && <Step3 />}
+            {/*  {step === 2 && <Step3 />} */}
             {/* {step === 3 && <Step4 />} */}
-            <div className="bg-white px-10 sm:px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center  justify-between">
+            {/*   <div className="bg-white px-10 sm:px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center  justify-between">
               <div className="w-full grid grid-cols-2 justify-between">
                 <div>
                   {step > 0 ? (
@@ -209,13 +209,8 @@ const FormStep = () => {
                 </div>
               </div>
 
-              {/*  <dt className="text-sm font-medium text-gray-500 md:px-2 px-4 mr-4">
-                
-              </dt>
-              <dd className="mt-4 sm:mt-0 flex justify-between w-full md:px-4 px-4">
-               
-              </dd> */}
-            </div>
+             
+            </div> */}
           </Form>
         )}
       </Formik>

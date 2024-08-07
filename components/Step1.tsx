@@ -11,10 +11,10 @@ const Step1 = () => {
       <div className="w-full">
         <div className="bg-white shadow-md overflow-hidden ">
           <div className="px-7 py-8 ">
-            <h3 className="text-[12px] font-normal text-black md:text-2xl">
+            <p className="text-[12px] px-4 font-normal text-justify text-black text-sm ttext-center  md:text-2xl">
               Nos tarifs de livraison pour l’envoi de vos colis de Paris à
               Abidjan
-            </h3>
+            </p>
           </div>
           <div className="border-t border-gray-200 px-4">
             <dl>
