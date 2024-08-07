@@ -160,13 +160,13 @@ const FormStep = () => {
       >
         {({ isSubmitting }) => (
           <Form>
-            <Stepper activeStep={step}>
+            {/*  <Stepper activeStep={step}>
               {steps.map((label) => (
                 <Step key={label}>
                   <StepLabel>{label}</StepLabel>
                 </Step>
               ))}
-            </Stepper>
+            </Stepper> */}
             {/*  {step === 0 && <Step1 />} */}
             {step === 1 && <Step2 />}
             {/*  {step === 2 && <Step3 />} */}

@@ -10,7 +10,7 @@ const Step2 = () => {
   return (
     <>
       <div className="bg-white w-full shadow overflow-hidden  pb-4 items-center justify-center">
-        <div className="px-4 py-5 sm:px-6 items-center justify-center">
+        <div className="px-4  py-5 sm:px-6 items-center justify-center">
           <h3 className="text-xl leading-6 font-normal text-red-500 items-center justify-center text-center">
             IMPORTANT A SAVOIR
           </h3>
