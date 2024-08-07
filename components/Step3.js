@@ -202,7 +202,7 @@ const Step3 = () => {
                   htmlFor="option"
                   className={`block font-latoBold text-sm pb-2 ${touched.option && errors.option ? "" : ""}`}
                 >
-                  "Option de livraison*"
+                  Option de livraison*
                 </label>
                 <select
                     className="bg-white block w-full text-black text-sm border-2 border-gray placeholder-custom-placeholder placeholder-gray rounded-sm p-2 mb-4 sm:mb-0 focus:bg-gray focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
