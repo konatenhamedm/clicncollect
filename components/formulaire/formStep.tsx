@@ -171,7 +171,7 @@ const FormStep = () => {
             {step === 1 && <Step2 />}
             {step === 2 && <Step3 />}
             {/* {step === 3 && <Step4 />} */}
-            <div className="bg-white px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center  justify-between">
+            <div className="bg-white px-10 sm:px-6 py-5 flex flex-col sm:flex-row sm:justify-between sm:items-center  justify-between">
               <div className="w-full grid grid-cols-2 justify-between">
                 <div>
                   {step > 0 ? (

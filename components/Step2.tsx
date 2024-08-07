@@ -21,8 +21,8 @@ const Step2 = () => {
         <div className="border-t border-gray-200 px-4">
           <dl>
             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-1 sm:gap-4 sm:px-6">
-              <dt className="text-xl font-normal text-black sm:col-span-2">
-                <p className="mt-1 max-w-2xl text-xl text-black justify-center text-justify">
+              <dt className="text-xl font-normal px-2 text-black sm:col-span-2">
+                <p className="mt-1 max-w-2xl text-md sm:text-xl text-black justify-center text-justify">
                   Le site ClicnCollect s’occupe{" "}
                   <span className="font-normal">
                     {" "}
@@ -57,7 +57,7 @@ const Step2 = () => {
               </dt>
             </div>
             <div className="bg-white px-2 py-5 sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 ">
-              <dt className="text-lg font-normal text-black ">
+              <dt className="text-lg  px-2  font-normal text-black ">
                 <Image
                   src="/adidas.jpg"
                   alt="logo"
@@ -66,14 +66,14 @@ const Step2 = () => {
                   className="w-[3rem] md:w-[5rem]"
                 />
               </dt>
-              <dd className="mt-1 font-normal text-lg text-black sm:mt-0 sm:col-span-4">
+              <dd className="mt-1 px-4 font-normal text-lg text-black sm:mt-0 sm:col-span-4">
                 <a href="" className="underline text-blue-400">
                   Cliquez <span>ici</span> pour être redirigé sur le site de la
                   marque
                 </a>
               </dd>
             </div>
-            <div className="bg-white px-2 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-40px] md:mt-[-80px]">
+            <div className="bg-white px-6 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6 border-b-2 mt-[-40px] md:mt-[-80px]">
               <dt className="text-lg font-normal text-black "></dt>
               <dd className="font-normal text-lg  text-black sm:mt-0 sm:col-span-4">
                 <p className="font-extranormal">
