@@ -1,15 +1,51 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { ReactElement, useState } from "react";
+import Modal from "./modals/Modal";
 
 // components/Step2.js
 const Step2 = () => {
   const router = useRouter();
 
+  const [etat, setEtat] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
+  const [title, setTitle] = useState("dd");
+  const [size, setSize] = useState("3xl");
+  const [gradient, setGradient] = useState(false);
+  const [closeExiste, setCloseExiste] = useState(true);
+  const [label, setLabel] = useState("");
+  const [modalContent, setModalContent] = useState<React.ReactElement>();
+  const [img, setImg] = useState(null);
+  const [errorServeur, setErrorServeur] = useState(false);
+
+  const openModal = (
+    content: ReactElement,
+    title: string,
+    existe: boolean,
+    size: string,
+    gradient: boolean,
+    label: string,
+    errorServeur: boolean
+  ) => {
+    setModalContent(content);
+    setTitle(title);
+    setCloseExiste(existe);
+    setSize(size);
+    setGradient(gradient);
+    setLabel(label);
+    setShowModal(true);
+    setErrorServeur(errorServeur);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
-      <div className="bg-white w-full shadow overflow-hidden  pb-4 items-center justify-center">
+      <div className="bg-white w-full shadow overflow-hidden  pb-0 items-center justify-center">
         <div className="px-4  py-5 sm:px-6 items-center justify-center">
           <h3 className="text-xl leading-6 font-normal text-red-500 items-center justify-center text-center">
             IMPORTANT A SAVOIR
@@ -66,12 +102,13 @@ const Step2 = () => {
                 </p>
               </dt>
             </div> */}
-            <div className="px-4 py-5 sm:px-6 items-center justify-center">
+            <div className="px-0 py-5 sm:px-6 items-center justify-center">
               <h6 className="text-md leading-6   font-normal text-black items-center justify-center text-center">
                 Options de livraison{" "}
                 <span className="">
-                  {" "}
-                  <br /> (Livraison entre 1 et 7 jours)
+                  {/*  {" "}
+                  <br /> */}{" "}
+                  (entre 1 et 7 jours)
                 </span>
               </h6>
               {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">
@@ -115,23 +152,45 @@ const Step2 = () => {
                 />
               </dt>
               <dd className="mt-1 px-4 font-normal sm:text-lg text-sm text-black sm:mt-0 sm:col-span-4 col-span-4">
-                <a href="" className="underline text-blue-400">
+                <a
+                  href="#"
+                  onClick={() => {
+                    if (etat === true) {
+                      router.push("/adidas");
+                    } else {
+                      openModal(
+                        <>Veuillez accepter les conditions d'utilisation</>,
+                        "Alerte infos",
+                        true,
+                        "lg",
+                        false,
+                        "Fermer",
+                        false
+                      );
+                      //alert("Veuillez accepter les conditions d'utilisation");
+                    }
+                  }}
+                  className="underline text-blue-400"
+                >
                   Cliquez <span>ici</span> pour être redirigé sur le site de la
                   marque
                 </a>
               </dd>
             </div>
-            <div className="bg-white px-0 py-8  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6  mt-[-40px] md:mt-[-80px]">
+            <div className="bg-white px-0 py-5  sm:grid sm:grid-cols-5 sm:gap-2 sm:px-6  mt-[-7px] md:mt-[-40px]">
               <dt className="text-lg font-normal text-black "></dt>
-              <dd className="font-normal sm:text-lg text-sm  text-black sm:mt-0 sm:col-span-4">
+              <dd className="font-normal sm:text-lg text-sm  text-black sm:mt-0 sm:col-span-4 mt-[12px]">
                 <p className="font-extranormal">
                   <input
+                    onClick={() => {
+                      setEtat(true);
+                    }}
                     type="checkbox"
                     id="vehicle1"
                     name="vehicle1"
                     value="Bike"
                   />
-                  <span className="px-2 text-[12px]">
+                  <span className="px-2 text-[10px] sm:text-sm">
                     En poursuivant, je reconnais avoir bien pris connaissance de
                     la note d'information ci-dessus
                   </span>
@@ -149,6 +208,22 @@ const Step2 = () => {
           </dl>
         </div>
       </div>
+
+      <Modal
+        show={showModal}
+        onClose={closeModal}
+        content={
+          <>
+            <h3>Veuillez accepter les conditions d'utilisation</h3>{" "}
+          </>
+        }
+        size="lg"
+        title="Alerte infos"
+        actionLabel={label}
+        onCloseExiste={true}
+        gradient={gradient}
+        errorServeur={errorServeur}
+      />
     </>
   );
 };
