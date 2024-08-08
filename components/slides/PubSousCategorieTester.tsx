@@ -20,7 +20,7 @@ const dataR = [
     id: 3,
     title: "Swiper Carousel Example",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imageUrl: "/banniere2(1)(1).jpg",
+    imageUrl: "/bannp.jpg",
   },
   /* {
     id: 4,

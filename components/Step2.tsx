@@ -76,12 +76,15 @@ const Step2 = () => {
                   vous permettons de faire votre shopping directement sur le
                   site de vos marques préférées en France et de vous faire
                   livrer à Abidjan par Chronopost ou DHL à des tarifs réduits et
-                  une garantie lors du transport.Vous procéderez au paiement des
-                  frais de livraison une fois votre shopping terminé. Veuillez
-                  consulter la grille de prix ci-dessous à titre d’information.{" "}
+                  une garantie lors du transport. Vous procéderez au paiement
+                  des frais de livraison une fois votre shopping terminé.
+                  Veuillez consulter la grille de prix ci-dessous à
+                  titre d’information. Délai de livraison 1-7 jours ouvrés.{" "}
                   <br></br>
-                  <br></br> Attention, en cas de retour les frais sont
-                  entièrement à vore charge.
+                  <p className="mt-4">
+                    Attention, en cas de retour les frais sont
+                    entièrement à vore charge.
+                  </p>
                 </p>
               </dt>
             </div>
@@ -108,7 +111,7 @@ const Step2 = () => {
                 <span className="">
                   {/*  {" "}
                   <br /> */}{" "}
-                  (entre 1 et 7 jours)
+                  {/*  (entre 1 et 7 jours) */}
                 </span>
               </h6>
               {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">
@@ -160,7 +163,7 @@ const Step2 = () => {
                     } else {
                       openModal(
                         <>Veuillez accepter les conditions d'utilisation</>,
-                        "Alerte infos",
+                        "",
                         true,
                         "lg",
                         false,
@@ -214,11 +217,11 @@ const Step2 = () => {
         onClose={closeModal}
         content={
           <>
-            <h3>Veuillez accepter les conditions d'utilisation</h3>{" "}
+            <h3>Veuillez cocher le champ obligatoire pour continuer</h3>{" "}
           </>
         }
         size="lg"
-        title="Alerte infos"
+        title=""
         actionLabel={label}
         onCloseExiste={true}
         gradient={gradient}

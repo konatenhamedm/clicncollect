@@ -56,7 +56,7 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
         "
       >
         <div
-          className={`modal-box w-full max-w-md mx-4 sm:mx-auto border-2 border-[#f1a730] cursor-pointer px-4 ${
+          className={`modal-box w-full max-w-md mx-4 sm:mx-auto border-2 border-black cursor-pointer px-4 ${
             gradient
               ? "bg-gradient-to-r from-[#75d4c3] to-[#f1a730]"
               : "bg-white"
@@ -80,8 +80,8 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
             {title}
           </h3>
           <div className="relative flex py-3.5 items-center">
-            <div className="flex-grow border-t border-gray-400"></div>
-            <div className="flex-grow border-t border-gray-400"></div>
+            <div className="flex-grow "></div>
+            <div className="flex-grow "></div>
           </div>
 
           <div className="content justify-center">
@@ -115,20 +115,20 @@ const Modal: React.FC<ModalDynamiqueProps> = ({
             )}
             {actionLabel && (
               <div className="relative flex py-1 items-center">
-                <div className="flex-grow border-t border-gray-400"></div>
-                <div className="flex-grow border-t border-gray-400"></div>
+                <div className="flex-grow "></div>
+                <div className="flex-grow "></div>
               </div>
             )}
 
             <div className="grid grid-cols-3 gap-2 justify-items-end pb-4">
               <div></div>
               <div></div>
-              <div>
+              <div className="pt-4">
                 {actionLabel && (
                   <button
                     onClick={() => onClose(true)}
                     type="button"
-                    className="bg-[#75d4c3] text-white font-bold py-2 px-4 rounded-md hover:bg-[#95ebdb] transition ease-in-out duration-150"
+                    className="bg-black text-white font-bold py-2 px-4 rounded-md hover:bg-[#95ebdb] transition ease-in-out duration-150"
                   >
                     {actionLabel}
                   </button>
