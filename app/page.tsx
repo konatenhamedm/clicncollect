@@ -55,7 +55,7 @@ export default function Home() {
     <div className=" py-7 mt-[45px] bg-[#F5F5F5]">
       <Tester />
 
-      <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108] mt-[-40px] md:mt-[0px]">
+      <div className="flex items-center bg-[#F5F5F5] rounded border border-[#EC9108] mt-[-100px] md:mt-[0px]">
         {/*  <div className="flex flex-shrink-0 items-center justify-center bg-[#F5F5F5] h-10 md:h-12 w-16 rounded">
           <img
             src="/WhatsApp_Image_2024-06-29_à_12.01.09_a6f8fc8c-removebg-preview.png"

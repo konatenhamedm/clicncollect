@@ -1,10 +1,10 @@
-"use client";
+//"use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 function Page({ params }: { params: { marque: string } }) {
-  const router = useRouter();
+  //const router = useRouter();
   return (
     <div className=" flex pb-4 py-7 mt-[45px] bg-[#F5F5F5] items-center justify-center">
       <div className="pt-4  items-center justify-center pb-4">
@@ -85,7 +85,7 @@ function Page({ params }: { params: { marque: string } }) {
                 <dt className="text-sm font-medium text-gray-500 sm:col-span-4"></dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 items-end justify-end">
                   <button
-                    onClick={() => router.push("/formulaire/" + params.marque)}
+                    // onClick={() => /* router.push("/formulaire/" + params.marque) */}
                     className="bg-[#f1a730] text-white font-normal py-2 px-4 rounded-md  hover:bg-[#f1a730] hover:to-[#95ebdb] transition ease-in-out duration-150"
                     type="submit"
                   >
