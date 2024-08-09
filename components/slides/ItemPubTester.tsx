@@ -40,7 +40,7 @@ const ItemPubTester: React.FC<ItemProps> = ({
       </div>
     </div> */
 
-    <div className="w-full flex flex-col h-[155px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
+    <div className="w-full flex flex-col h-[125px] overflow-hidden rounded-lg md:h-[455px] cursor-pointer relative">
       <div className="z-20 relative text-white container">
         {/*  <p className="leading-normal mb-1 mt-5"></p>
       <Button color="primary" variant="ghost">
