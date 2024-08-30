@@ -23,7 +23,7 @@ module.exports = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://api.clicncollect.com/:path*', // Proxy to Backend
+        destination: 'http://api.clicncollect.com/:path*', // Proxy to Backend
       },
     ];
   },
