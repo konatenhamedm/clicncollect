@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: white;
+ /*  background-image: url('../public/bg-vert.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover
+ /*  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));; */
+}
+
+.slick-dots{
+  display: none !important;
+}
+
+.blob {
+  background: linear-gradient(#212121, #212121) padding-box,
+            linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) 
+}
+
+/* .font-helvetica {
+  font-family: 'Helvetica', sans-serif;
+} */
